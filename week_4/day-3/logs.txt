@@ -1,0 +1,446 @@
+Attaching to docker_compose_example-phpmyadmin-1, docker_compose_example-wordpress-1, docker_compose_example-db-1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:14+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:15+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:15+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:15+00:00 [Note] [Entrypoint]: Initializing database files
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:16 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:16 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m PLEASE REMEMBER TO SET A PASSWORD FOR THE MariaDB root USER !
+[36mdocker_compose_example-db-1 |[0m To do so, start the server, then issue the following command:
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m '/usr/bin/mysql_secure_installation'
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m which will also give you the option of removing the test
+[36mdocker_compose_example-db-1 |[0m databases and anonymous user created by default.  This is
+[36mdocker_compose_example-db-1 |[0m strongly recommended for production servers.
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m See the MariaDB Knowledgebase at https://mariadb.com/kb or the
+[36mdocker_compose_example-db-1 |[0m MySQL manual for more instructions.
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m Please report any problems at https://mariadb.org/jira
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m The latest information about MariaDB is available at https://mariadb.org/.
+[36mdocker_compose_example-db-1 |[0m You can find additional information about the MySQL part at:
+[36mdocker_compose_example-db-1 |[0m https://dev.mysql.com
+[36mdocker_compose_example-db-1 |[0m Consider joining MariaDB's strong and vibrant community:
+[36mdocker_compose_example-db-1 |[0m https://mariadb.org/get-involved/
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:19+00:00 [Note] [Entrypoint]: Database files initialized
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:19+00:00 [Note] [Entrypoint]: Starting temporary server
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:19+00:00 [Note] [Entrypoint]: Waiting for server startup
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 110 ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Number of pools: 1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Using Linux native AIO
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: 128 rollback segments are active.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: 10.6.4 started; log sequence number 42161; transaction id 14
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Warning] 'user' entry 'root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] InnoDB: Buffer pool(s) load completed at 230504  8:50:20
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:20 0 [Note] mysqld: ready for connections.
+[36mdocker_compose_example-db-1 |[0m Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 0  mariadb.org binary distribution
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:21+00:00 [Note] [Entrypoint]: Temporary server started.
+[36mdocker_compose_example-db-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+[36mdocker_compose_example-db-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/leapseconds' as time zone. Skipping it.
+[36mdocker_compose_example-db-1 |[0m Warning: Unable to load '/usr/share/zoneinfo/tzdata.zi' as time zone. Skipping it.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:28 5 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:28+00:00 [Note] [Entrypoint]: Creating database wordpress
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:28+00:00 [Note] [Entrypoint]: Creating user wordpress
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:28+00:00 [Note] [Entrypoint]: Giving user wordpress access to schema wordpress
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:28+00:00 [Note] [Entrypoint]: Stopping temporary server
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:28 0 [Note] mysqld (initiated by: root[root] @ localhost []): Normal shutdown
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:28 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:28 0 [Note] InnoDB: Starting shutdown...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:28 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:28 0 [Note] InnoDB: Buffer pool(s) dump completed at 230504  8:50:28
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:28 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:28 0 [Note] InnoDB: Shutdown completed; log sequence number 42173; transaction id 15
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] mysqld: Shutdown complete
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:29+00:00 [Note] [Entrypoint]: Temporary server stopped
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:50:29+00:00 [Note] [Entrypoint]: MariaDB init process done. Ready for start up.
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 1 ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Number of pools: 1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Using Linux native AIO
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: 128 rollback segments are active.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: 10.6.4 started; log sequence number 42173; transaction id 14
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] InnoDB: Buffer pool(s) load completed at 230504  8:50:29
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] Server socket created on IP: '0.0.0.0'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:29 0 [Note] Server socket created on IP: '::'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:30 0 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:50:30 0 [Note] mysqld: ready for connections.
+[36mdocker_compose_example-db-1 |[0m Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:55:52 0 [Note] mysqld (initiated by: unknown): Normal shutdown
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:55:52 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:55:52 0 [Note] InnoDB: Starting shutdown...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:55:52 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:55:52 0 [Note] InnoDB: Buffer pool(s) dump completed at 230504  8:55:52
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:55:53 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:55:53 0 [Note] InnoDB: Shutdown completed; log sequence number 42185; transaction id 15
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:55:53 0 [Note] mysqld: Shutdown complete
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:56:03+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:56:04+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 08:56:04+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 1 ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Number of pools: 1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Using Linux native AIO
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: 128 rollback segments are active.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: 10.6.4 started; log sequence number 42185; transaction id 14
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] InnoDB: Buffer pool(s) load completed at 230504  8:56:04
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] Server socket created on IP: '0.0.0.0'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] Server socket created on IP: '::'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04  8:56:04 0 [Note] mysqld: ready for connections.
+[36mdocker_compose_example-db-1 |[0m Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:16:48 0 [Note] mysqld (initiated by: unknown): Normal shutdown
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:16:48 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:16:48 0 [Note] InnoDB: Starting shutdown...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:16:48 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:16:48 0 [Note] InnoDB: Buffer pool(s) dump completed at 230504 11:16:48
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:16:48 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:16:48 0 [Note] InnoDB: Shutdown completed; log sequence number 42197; transaction id 15
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:16:48 0 [Note] mysqld: Shutdown complete
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 1 ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Number of pools: 1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Using Linux native AIO
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: 128 rollback segments are active.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: 10.6.4 started; log sequence number 42197; transaction id 14
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] InnoDB: Buffer pool(s) load completed at 230504 11:17:01
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] Server socket created on IP: '0.0.0.0'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] Server socket created on IP: '::'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:17:01 0 [Note] mysqld: ready for connections.
+[36mdocker_compose_example-db-1 |[0m Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:47 0 [Note] mysqld (initiated by: unknown): Normal shutdown
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:47 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:47 0 [Note] InnoDB: Starting shutdown...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:47 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:47 0 [Note] InnoDB: Buffer pool(s) dump completed at 230504 11:37:47
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:48 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:48 0 [Note] InnoDB: Shutdown completed; log sequence number 42209; transaction id 15
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:48 0 [Note] mysqld: Shutdown complete
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 1 ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Number of pools: 1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Using Linux native AIO
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: 128 rollback segments are active.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: 10.6.4 started; log sequence number 42209; transaction id 14
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] InnoDB: Buffer pool(s) load completed at 230504 11:37:54
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] Server socket created on IP: '0.0.0.0'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] Server socket created on IP: '::'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:37:54 0 [Note] mysqld: ready for connections.
+[36mdocker_compose_example-db-1 |[0m Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:43:59 0 [Note] mysqld (initiated by: unknown): Normal shutdown
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:43:59 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:43:59 0 [Note] InnoDB: Starting shutdown...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:43:59 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:43:59 0 [Note] InnoDB: Buffer pool(s) dump completed at 230504 11:43:59
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:00 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:00 0 [Note] InnoDB: Shutdown completed; log sequence number 42221; transaction id 15
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:00 0 [Note] mysqld: Shutdown complete
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:18+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:18+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:18+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:18 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 1 ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Number of pools: 1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Using Linux native AIO
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: 128 rollback segments are active.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: 10.6.4 started; log sequence number 42221; transaction id 14
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] InnoDB: Buffer pool(s) load completed at 230504 11:44:19
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] Server socket created on IP: '0.0.0.0'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] Server socket created on IP: '::'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:44:19 0 [Note] mysqld: ready for connections.
+[36mdocker_compose_example-db-1 |[0m Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:35 0 [Note] mysqld (initiated by: unknown): Normal shutdown
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:35 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:35 0 [Note] InnoDB: Starting shutdown...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:35 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:35 0 [Note] InnoDB: Buffer pool(s) dump completed at 230504 11:45:35
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:35 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:35 0 [Note] InnoDB: Shutdown completed; log sequence number 42233; transaction id 15
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:35 0 [Note] mysqld: Shutdown complete
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 1 ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Number of pools: 1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Using Linux native AIO
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: 128 rollback segments are active.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: 10.6.4 started; log sequence number 42233; transaction id 14
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] InnoDB: Buffer pool(s) load completed at 230504 11:45:40
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] Server socket created on IP: '0.0.0.0'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] Server socket created on IP: '::'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:40 0 [Note] mysqld: ready for connections.
+[36mdocker_compose_example-db-1 |[0m Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:45:57 3 [Warning] Access denied for user 'phpmyadmin'@'172.18.0.4' (using password: YES)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:46:54 0 [Note] mysqld (initiated by: unknown): Normal shutdown
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:46:54 0 [Note] InnoDB: FTS optimize thread exiting.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:46:54 0 [Note] InnoDB: Starting shutdown...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:46:54 0 [Note] InnoDB: Dumping buffer pool(s) to /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:46:54 0 [Note] InnoDB: Buffer pool(s) dump completed at 230504 11:46:54
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:46:54 0 [Note] InnoDB: Removed temporary tablespace data file: "./ibtmp1"
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:46:54 0 [Note] InnoDB: Shutdown completed; log sequence number 42245; transaction id 15
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:46:54 0 [Note] mysqld: Shutdown complete
+[36mdocker_compose_example-db-1 |[0m 
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:12+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13+00:00 [Note] [Entrypoint]: Entrypoint script for MariaDB Server 1:10.6.4+maria~focal started.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] mysqld (server 10.6.4-MariaDB-1:10.6.4+maria~focal) starting as process 1 ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Compressed tables use zlib 1.2.11
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Number of pools: 1
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Using crc32 + pclmulqdq instructions
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] mysqld: O_TMPFILE is not supported on /tmp (disabling future attempts)
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Using Linux native AIO
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Initializing buffer pool, total size = 134217728, chunk size = 134217728
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Completed initialization of buffer pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: 128 rollback segments are active.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Creating shared tablespace for temporary tables
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Setting file './ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: 10.6.4 started; log sequence number 42245; transaction id 14
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] Plugin 'FEEDBACK' is disabled.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Warning] 'default-authentication-plugin' is MySQL 5.6 / 5.7 compatible option. To be implemented in later versions.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] InnoDB: Buffer pool(s) load completed at 230504 11:47:13
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Warning] You need to use --log-bin to make --expire-logs-days or --binlog-expire-logs-seconds work.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] Server socket created on IP: '0.0.0.0'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] Server socket created on IP: '::'.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Warning] 'proxies_priv' entry '@% root@e63d92c413e9' ignored in --skip-name-resolve mode.
+[36mdocker_compose_example-db-1 |[0m 2023-05-04 11:47:13 0 [Note] mysqld: ready for connections.
+[36mdocker_compose_example-db-1 |[0m Version: '10.6.4-MariaDB-1:10.6.4+maria~focal'  socket: '/run/mysqld/mysqld.sock'  port: 3306  mariadb.org binary distribution
+[33mdocker_compose_example-phpmyadmin-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[33mdocker_compose_example-phpmyadmin-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[33mdocker_compose_example-phpmyadmin-1 |[0m [Thu May 04 11:46:52.635141 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.1.17 configured -- resuming normal operations
+[33mdocker_compose_example-phpmyadmin-1 |[0m [Thu May 04 11:46:52.635184 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[33mdocker_compose_example-phpmyadmin-1 |[0m [Thu May 04 11:46:54.180936 2023] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[33mdocker_compose_example-phpmyadmin-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[33mdocker_compose_example-phpmyadmin-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[33mdocker_compose_example-phpmyadmin-1 |[0m [Thu May 04 11:47:12.984093 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.1.17 configured -- resuming normal operations
+[33mdocker_compose_example-phpmyadmin-1 |[0m [Thu May 04 11:47:12.984151 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:47:48 +0000] "POST /index.php?route=/ HTTP/1.1" 200 6040 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:47:54 +0000] "GET /index.php?route=/ HTTP/1.1" 200 5876 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:48:02 +0000] "POST /index.php?route=/ HTTP/1.1" 302 1007 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m WordPress not found in /var/www/html - copying now...
+[32mdocker_compose_example-wordpress-1 |[0m Complete! WordPress has been successfully copied to /var/www/html
+[32mdocker_compose_example-wordpress-1 |[0m No 'wp-config.php' found in /var/www/html, but 'WORDPRESS_...' variables supplied; copying 'wp-config-docker.php' (WORDPRESS_DB_HOST WORDPRESS_DB_NAME WORDPRESS_DB_PASSWORD WORDPRESS_DB_USER)
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 08:50:16.105650 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.0.28 configured -- resuming normal operations
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 08:50:16.105786 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 08:55:52.860415 2023] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 08:56:03.953706 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.0.28 configured -- resuming normal operations
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 08:56:03.953798 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:49 +0000] "GET / HTTP/1.1" 302 400 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:49 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4617 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:50 +0000] "GET /wp-includes/css/dashicons.min.css?ver=6.2 HTTP/1.1" 200 36068 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:50 +0000] "GET /wp-includes/css/buttons.min.css?ver=6.2 HTTP/1.1" 200 1790 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:50 +0000] "GET /wp-admin/css/l10n.min.css?ver=6.2 HTTP/1.1" 200 1022 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:50 +0000] "GET /wp-admin/css/install.min.css?ver=6.2 HTTP/1.1" 200 2125 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:50 +0000] "GET /wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0 HTTP/1.1" 200 5147 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:50 +0000] "GET /wp-admin/css/forms.min.css?ver=6.2 HTTP/1.1" 200 6731 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:50 +0000] "GET /wp-admin/js/language-chooser.min.js?ver=6.2 HTTP/1.1" 200 622 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:50 +0000] "GET /wp-includes/js/jquery/jquery.min.js?ver=3.6.3 HTTP/1.1" 200 31403 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:51 +0000] "GET /wp-admin/images/wordpress-logo.svg?ver=20131107 HTTP/1.1" 200 1810 "http://localhost/wp-admin/css/install.min.css?ver=6.2" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:51 +0000] "GET /wp-admin/images/spinner.gif HTTP/1.1" 200 3941 "http://localhost/wp-admin/css/install.min.css?ver=6.2" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:51 +0000] "GET /favicon.ico HTTP/1.1" 302 399 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:51 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4617 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "POST /wp-admin/install.php?step=1 HTTP/1.1" 200 2684 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/zxcvbn-async.min.js?ver=1.0 HTTP/1.1" 200 605 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-admin/js/password-strength-meter.min.js?ver=6.2 HTTP/1.1" 200 970 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5 HTTP/1.1" 200 2013 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2 HTTP/1.1" 200 2836 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11 HTTP/1.1" 200 2851 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae HTTP/1.1" 200 4218 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0 HTTP/1.1" 200 6884 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/wp-util.min.js?ver=6.2 HTTP/1.1" 200 1105 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:48:02 +0000] "GET /index.php?route=/&route=%2F HTTP/1.1" 200 18496 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:48:02 +0000] "POST /index.php?route=/config/get HTTP/1.1" 200 2362 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:48:02 +0000] "POST /index.php?route=/navigation&ajax_request=1 HTTP/1.1" 200 2931 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:48:02 +0000] "POST /index.php?route=/config/get HTTP/1.1" 200 2451 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:48:02 +0000] "POST /index.php?route=/version-check HTTP/1.1" 200 1028 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[33mdocker_compose_example-phpmyadmin-1 |[0m 172.18.0.1 - - [04/May/2023:11:48:03 +0000] "POST /index.php?route=/config/set HTTP/1.1" 200 2352 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-admin/js/user-profile.min.js?ver=6.2 HTTP/1.1" 200 2677 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/underscore.min.js?ver=1.13.4 HTTP/1.1" 200 7662 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /favicon.ico HTTP/1.1" 302 399 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-includes/js/zxcvbn.min.js HTTP/1.1" 200 400400 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:09:00:58 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4617 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 127.0.0.1 - - [04/May/2023:09:01:06 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apache/2.4.56 (Debian) PHP/8.0.28 (internal dummy connection)"
+[32mdocker_compose_example-wordpress-1 |[0m 127.0.0.1 - - [04/May/2023:09:01:07 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apache/2.4.56 (Debian) PHP/8.0.28 (internal dummy connection)"
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:16:48.694231 2023] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:17:01.392525 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.0.28 configured -- resuming normal operations
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:17:01.392593 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:17:18 +0000] "POST /wp-admin/install.php?step=1 HTTP/1.1" 200 2683 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:17:18 +0000] "GET /favicon.ico HTTP/1.1" 302 399 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:17:19 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4618 "http://localhost/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:17:28 +0000] "GET / HTTP/1.1" 302 400 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:17:28 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4618 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:17:29 +0000] "GET /favicon.ico HTTP/1.1" 302 399 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:17:29 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4618 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:18:20 +0000] "-" 408 0 "-" "-"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:09 +0000] "GET / HTTP/1.1" 302 400 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:09 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4622 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-includes/css/buttons.min.css?ver=6.2 HTTP/1.1" 200 1791 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-includes/css/dashicons.min.css?ver=6.2 HTTP/1.1" 200 36068 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-admin/css/forms.min.css?ver=6.2 HTTP/1.1" 200 6731 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-admin/css/l10n.min.css?ver=6.2 HTTP/1.1" 200 1021 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-admin/css/install.min.css?ver=6.2 HTTP/1.1" 200 2124 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-admin/js/language-chooser.min.js?ver=6.2 HTTP/1.1" 200 622 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0 HTTP/1.1" 200 5146 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-includes/js/jquery/jquery.min.js?ver=3.6.3 HTTP/1.1" 200 31402 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-admin/images/wordpress-logo.svg?ver=20131107 HTTP/1.1" 200 1810 "http://127.0.0.1/wp-admin/css/install.min.css?ver=6.2" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-admin/images/spinner-2x.gif HTTP/1.1" 200 7822 "http://127.0.0.1/wp-admin/css/install.min.css?ver=6.2" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /favicon.ico HTTP/1.1" 302 399 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:10 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4622 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "POST /wp-admin/install.php?step=1 HTTP/1.1" 200 2685 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/zxcvbn-async.min.js?ver=1.0 HTTP/1.1" 200 605 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5 HTTP/1.1" 200 2013 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2 HTTP/1.1" 200 2835 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-admin/js/password-strength-meter.min.js?ver=6.2 HTTP/1.1" 200 970 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0 HTTP/1.1" 200 6884 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae HTTP/1.1" 200 4218 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11 HTTP/1.1" 200 2850 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/wp-util.min.js?ver=6.2 HTTP/1.1" 200 1105 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-admin/js/user-profile.min.js?ver=6.2 HTTP/1.1" 200 2677 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/underscore.min.js?ver=1.13.4 HTTP/1.1" 200 7662 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /favicon.ico HTTP/1.1" 302 399 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-includes/js/zxcvbn.min.js HTTP/1.1" 200 400400 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:14 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4622 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 127.0.0.1 - - [04/May/2023:11:20:22 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apache/2.4.56 (Debian) PHP/8.0.28 (internal dummy connection)"
+[32mdocker_compose_example-wordpress-1 |[0m 127.0.0.1 - - [04/May/2023:11:20:23 +0000] "OPTIONS * HTTP/1.0" 200 126 "-" "Apache/2.4.56 (Debian) PHP/8.0.28 (internal dummy connection)"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:26 +0000] "GET /favicon.ico HTTP/1.1" 302 400 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:20:26 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4622 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:21:17 +0000] "-" 408 0 "-" "-"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:31:55 +0000] "POST /wp-admin/install.php?step=1 HTTP/1.1" 200 2687 "http://127.0.0.1/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:31:55 +0000] "GET /favicon.ico HTTP/1.1" 302 399 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:31:55 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4622 "http://127.0.0.1/wp-admin/install.php?step=1" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:32:47 +0000] "-" 408 0 "-" "-"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:34:19 +0000] "GET / HTTP/1.1" 302 400 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:34:19 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4618 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:34:20 +0000] "GET /favicon.ico HTTP/1.1" 302 399 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:34:20 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 4618 "http://localhost/wp-admin/install.php" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+[32mdocker_compose_example-wordpress-1 |[0m 172.18.0.1 - - [04/May/2023:11:35:11 +0000] "-" 408 0 "-" "-"
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:37:47.849343 2023] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.4. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:37:54.670100 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.0.28 configured -- resuming normal operations
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:37:54.670166 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:43:59.834370 2023] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:44:18.777811 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.0.28 configured -- resuming normal operations
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:44:18.777882 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:45:35.638685 2023] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:45:40.440783 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.0.28 configured -- resuming normal operations
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:45:40.440843 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:46:54.181051 2023] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.3. Set the 'ServerName' directive globally to suppress this message
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:47:13.002583 2023] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.56 (Debian) PHP/8.0.28 configured -- resuming normal operations
+[32mdocker_compose_example-wordpress-1 |[0m [Thu May 04 11:47:13.002672 2023] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
